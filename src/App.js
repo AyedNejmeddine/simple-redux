@@ -7,12 +7,14 @@
  */
 
 import React from 'react';
-import {StyleSheet, Text, useColorScheme, View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
+import Login from './Login';
 
 const App = () => {
   return (
     <View style={styles.body}>
-      <Text style={styles.text}>Login</Text>
+      <Text style={styles.text}>Welcome to react native redux</Text>
+      <Login />
     </View>
   );
 };
