@@ -1,9 +1,9 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button} from 'react-native';
+import {StyleSheet, View, Button} from 'react-native';
 
 const Login = () => {
   return (
-    <View>
+    <View style={styles.body}>
       <Button
         onPress={() => console.warn('button')}
         title="Login"
@@ -15,14 +15,7 @@ const Login = () => {
 
 const styles = StyleSheet.create({
   body: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#ffff0088',
-  },
-  text: {
-    fontSize: 30,
-    fontWeight: 'bold',
+    marginTop: 50,
   },
 });
 

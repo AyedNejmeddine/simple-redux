@@ -9,11 +9,13 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Login from './Login';
+import Profile from './Profile';
 
 const App = () => {
   return (
     <View style={styles.body}>
       <Text style={styles.text}>Welcome to react native redux</Text>
+      <Profile />
       <Login />
     </View>
   );
@@ -29,6 +31,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     fontWeight: 'bold',
+    marginBottom: 50,
   },
 });
 
