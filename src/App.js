@@ -10,13 +10,17 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import Login from './Login';
 import Profile from './Profile';
+import {store} from './store';
+import {Provider} from 'react-redux';
 
 const App = () => {
   return (
     <View style={styles.body}>
       <Text style={styles.text}>Welcome to react native redux</Text>
-      <Profile />
-      <Login />
+      <Provider store={store}>
+        <Profile />
+        <Login />
+      </Provider>
     </View>
   );
 };
